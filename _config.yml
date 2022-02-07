@@ -1,6 +1,5 @@
 # Base configs
-image_fulls_loc: "/images/fulls"
-image_thumbs_loc: "/images/fulls"
+image_fulls_loc: "/images/bad-quality"
 
 # UI configs
 title: "אריאל ונתאי – צילום"

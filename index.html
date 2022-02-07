@@ -28,7 +28,7 @@ layout: default
     {% for image in site.static_files %}
     {% if image.path contains 'bad-quality' %}
     <div class="imgbox">
-        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
+        <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}"
                     class="center-fit" loading="lazy"/><br>
     </div>
     {% endif %}

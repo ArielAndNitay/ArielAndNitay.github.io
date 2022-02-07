@@ -8,6 +8,7 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body{
@@ -15,10 +16,6 @@ body{
     font-family: 'Heebo', cursive;
     text-align: center;
     background: black;
-}
-
-.fa {
-    color: white;
 }
 
 .imgbox {
@@ -49,7 +46,6 @@ img{
     line-height: 80px;
     font-weight: normal;
     text-shadow: 2px 2px black;
-    color: white;
 }
 
 /* =======logo======= */
