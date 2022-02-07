@@ -16,6 +16,10 @@ body{
     text-align: center;
 }
 
+/* .fa {
+    color: white;
+} */
+
 .imgbox {
     display: grid;
     height: 100%;
