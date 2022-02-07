@@ -5,26 +5,18 @@ layout: default
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <!-- Header -->    
-    <header id="header">
-        
+    <header>
+        <img loading="lazy" class="logo"
+            src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
     </header>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
-    </style>
+    <section id="home" class="hometext">
+        <div class="container">
+            <h1>צילום<br>אירועים</h1>
+            <a href="#portfolio" class="button button-accent">See my Work</a>
+        </div>
+    </section>
+
 
     <!-- Main -->
     <div id="main">
@@ -38,8 +30,21 @@ layout: default
         {% endfor %}
     </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="panel">
-        
+    
+    <footer class="footer-main-div">
+        <div class="footer-social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
+                            class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p id="contact">Designed By:<a href="https://www.instagram.com/the_spectacled_one/"
+                    target="_blank">the_spectacled_one</a></p>
+        </div>
+
     </footer>
 </div>
