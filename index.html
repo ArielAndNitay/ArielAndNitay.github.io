@@ -5,7 +5,7 @@ layout: default
     <div class="header1">
         <ul>
             <img loading="lazy" class="logo"
-            src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
+            src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.jpg"/>
 
             <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
                         class="fa fa-facebook-square"></i></a></li>
@@ -26,7 +26,7 @@ layout: default
 <!-- Main -->
 <div id="main">
     {% for image in site.static_files %}
-    {% if image.path contains 'fulls' %}
+    {% if image.path contains 'bad-quality' %}
     <div class="imgbox">
         <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
                     class="center-fit" loading="lazy"/><br>
