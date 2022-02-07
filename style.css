@@ -16,11 +16,6 @@ body{
     text-align: center;
 }
 
-h1 {
-    font-weight: bold;
-    color: white;
-}
-
 .imgbox {
     display: grid;
     height: 100%;
@@ -43,20 +38,13 @@ img{
 
 /* =======title======= */
 
-.hometext span{
-    letter-spacing: 2px;
-    text-align: center;
-    display: block;
-    font-size: 1.4em;
-    margin-left: 1px;
-    margin-top: 2.9em;
-}
-
 .hometext h1{
     font-size: 6em;
     line-height: 70px;
     text-align: center;
-
+    font-weight: normal;
+    text-shadow: 2px 2px black;
+    color: white;
 } 
 
 /* =======logo======= */
@@ -65,131 +53,42 @@ img{
     float: right;
 }
 
-/* =======button======= */
-
-.button{
-    display: inline-block;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: .5em 1.75em;
-}
-
-.button-small{
-    font-size: .7rem;
-}
-
-.button-accent{
-    color: chocolate;
-}
-
-.button-accent:hover{ 
-    background:goldenrod;
-    color: black;
-    transition: 150ms ease-in;
-}
-
-
 
 /* ======header====== */
 header{
     position: absolute;
     left: 0;
     right: 0;
-    margin: 1em;
 }
 
-/* =======home-bg======= */
-.hometext{
-    background-image: url("https://raw.githubusercontent.com/shvushon/photography/master/images/fulls/A%20(4).jpg");
-    padding: 6em 0;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
+.header1 ul{
+    padding: 15px;
 }
 
-/* =======footer======= */
-.footer-main-div{
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    background: #272727;
-}
-.footer-social-icons{
-    width: 100;
-    height: auto;
-    margin: auto;
-}
-
-.footer-social-icons ul{
-    margin: 0px;
-    padding: 10px;
-}
-
-.footer-social-icons ul li{
+.header1 ul li{
     display: inline-block;
     width: 50px;
     height: 50px;
     margin: 0px 10px;
     border-radius: 100%;
-    background: goldenrod;
 }
 
-.footer-social-icons ul li a{
+.header1 ul li a{
     color: black;
     font-size: 25px;
     display: block;
 }
 
-.footer-social-icons ul li a i{
+.header1 ul li a i{
     line-height: 50px;
 }
 
-.footer-main-menu{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
 
-.footer-main-menu ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-.footer-main-menu ul li{
-    display: inline-block;
-    margin: 0px 10px;
-}
-
-.footer-main-menu ul li a{
-    font-size: 20px;
-    font-weight: 100;
-    color: white;
-    text-decoration: none;
-    outline: none;
-}
-
-.footer-bottom{
-    width: 100;
-    height: 50px;
-    margin: auto;
-    background: goldenrod;
-    padding: 2px;
-}
-
-.footer-bottom p{
-    font-family: monospace;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-.footer-bottom p a{
-    color: black;
-    text-transform: lowercase;
+/* =======home-bg======= */
+.hometext{
+    background-image: url("https://raw.githubusercontent.com/shvushon/photography/master/images/fulls/IMG_9103.jpg");
+    padding: 6em 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
