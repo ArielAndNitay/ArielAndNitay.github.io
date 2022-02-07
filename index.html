@@ -37,8 +37,10 @@ layout: default
     <div id="main">
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
-        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                    data-name="{{ image.name }}"/>
+        <div class="imgbox">
+            <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                        data-name="{{ image.name }}" class="center-fit"/>
+        </div>
         {% endif %}
         {% endfor %}
     </div>
