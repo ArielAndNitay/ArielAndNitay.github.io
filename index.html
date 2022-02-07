@@ -1,59 +1,39 @@
-<!DOCTYPE HTML>
-<html dir="rtl" lang="he-IL">
-<head>
-    <title>אריאל ונתאי – צילום</title>
+---
+layout: default
+---
+<header>
+    <div class="header1">
+        <ul>
+            <img loading="lazy" class="logo"
+            src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
 
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet" />
-
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-</head>
-<body>
-
-    <header>
-        <div class="header1">
-            <ul>
-                <img loading="lazy" class="logo"
-                src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
-    
-                <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
-                            class="fa fa-facebook-square"></i></a></li>
-                <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
-                            class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </header>
-    
-    <section id="home" class="hometext">
-        <div class="container">
-            
-        <h1>אריאל ונתאי – <b>צילום אירועים</b></h1>
-        </div>
-    </section>
-    
-    <!-- Main -->
-    <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <div class="imgbox">
-            <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
-                        class="center-fit" loading="lazy"/><br>
-        </div>
-        {% endif %}
-        {% endfor %}
+            <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
+                        class="fa fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
+                        class="fa fa-instagram"></i></a></li>
+        </ul>
     </div>
-    
-    <footer>
-        <p>&copy; אריאל ונתאי צילום</p>
-    </footer>
-</body>
-</html>
+</header>
 
+<section id="home" class="hometext">
+    <div class="container">
+        
+    <h1>אריאל ונתאי – <b>צילום אירועים</b></h1>
+    </div>
+</section>
+
+<!-- Main -->
+<div id="main">
+    {% for image in site.static_files %}
+    {% if image.path contains 'fulls' %}
+    <div class="imgbox">
+        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
+                    class="center-fit" loading="lazy"/><br>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<footer>
+    <p>&copy; אריאל ונתאי צילום</p>
+</footer>
