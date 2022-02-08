@@ -1,3 +1,4 @@
+from tkinter import OFF
 from PIL import Image
 # import matplotlib.pyplot as plt
 # import numpy as np
@@ -5,6 +6,7 @@ import os
 from sys import argv
 
 WM_TO_IM_RATIO = 7
+OFFSET_PERCENT = 3
 
 def watermark(img_path, wm_path):
     image = Image.open(img_path)
@@ -19,7 +21,7 @@ def watermark(img_path, wm_path):
     else:
         watermark = watermark.resize((int(im_h / WM_TO_IM_RATIO), int(im_h // (WM_TO_IM_RATIO * ratio))))
     wm_h = watermark.size[1]
-    offset = int(im_h * 0.02)
+    offset = int(im_h * OFFSET_PERCENT * 0.01)
     image.paste(watermark, (offset, im_h - offset - wm_h), watermark)
     return image
 

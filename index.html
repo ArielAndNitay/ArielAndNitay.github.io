@@ -1,42 +1,51 @@
 ---
 layout: default
 ---
-<header>
-    <div class="header1">
-        <ul>
-            <a href="index.html">
-                <img class="logo"
-                src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
-            </a>
-            
-            <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
-                        class="fa fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
-                        class="fa fa-instagram"></i></a></li>
-            <li><a href="https://wa.me/972587990583" target="blank"><i
-                        class="fa fa-whatsapp"></i></a></li>
-        </ul>
-    </div>
-</header>
 
-<section id="home" class="hometext">
-    <div class="container">
-    <h1><b>אריאל ונתאי</b><br>צילום אירועים</h1>    
-    </div>
-</section>
+<script src="script.js"></script>
 
-<!-- Main -->
-<div id="main">
-    {% for image in site.static_files %}
-    {% if image.path contains 'bad-quality' %}
-    <div class="imgbox">
-        <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}"
-                    class="center-fit" loading="lazy"/><br>
+<div class="loader" id="loader"></div>
+
+<div id="container" hidden>
+
+    <header>
+        <div class="header1">
+            <ul>
+                <a href="index.html">
+                    <img class="logo" id="logo" onload="whenLoaded()"
+                    src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
+                </a>
+                
+                <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
+                            class="fa fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/972587990583" target="blank"><i
+                            class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hometext">
+        <div class="container">
+        <h1><b>אריאל ונתאי</b><br>צילום אירועים</h1>    
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+        {% for image in site.static_files %}
+        {% if image.path contains 'bad-quality' %}
+        <div class="imgbox">
+            <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}"
+                        class="center-fit" loading="lazy"/><br>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
+
+    <footer>
+        <p>&copy; אריאל ונתאי – בניית אתרים</p>
+    </footer>
+
 </div>
-
-<footer>
-    <p>&copy; אריאל ונתאי – בניית אתרים</p>
-</footer>

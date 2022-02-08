@@ -15,13 +15,17 @@
 </head>
 
 <body>
+<script src="script.js"></script>
+<div class="loader" id="loader"></div>
+
+<div id="container" hidden>
 
     <header>
         <div class="header1">
             <ul>
-                <img loading="lazy" class="logo"
-                src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.jpg"/>
-    
+                <img class="logo" id="logo" onload="whenLoaded()"
+                src="https://raw.githubusercontent.com/ArielAndNitay/ArielAndNitay.github.io/master/images/logo.png"/>
+
                 <li><a href="https://www.facebook.com/ariel.and.nitay/" target=" blank"><i
                             class="fa fa-facebook-square"></i></a></li>
                 <li><a href="https://www.instagram.com/ariel_nitay_photography/" target="blank"><i
@@ -31,33 +35,19 @@
             </ul>
         </div>
     </header>
-    
-<section id="home" class="hometext">
-    <div class="container">
         
-    <h1><b>אריאל ונתאי</b><br>צילום אירועים</h1>
-    </div>
-</section>
-
-
-<div class="black-line">
-</div>
-
-    <!-- Main -->
-    <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'bad-quality' %}
-        <div class="imgbox">
-            <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}"
-                        class="center-fit" loading="lazy"/><br>
+    <section id="home" class="hometext">
+        <div class="container">
+            
+        <h1><b>אריאל ונתאי</b><br>צילום אירועים</h1>
         </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-    
+    </section>
+
     <footer>
         <p>&copy; אריאל ונתאי צילום</p>
     </footer>
+</div>
+
 </body>
 
 </html>
