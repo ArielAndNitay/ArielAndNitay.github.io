@@ -5,3 +5,5 @@ function whenLoaded() {
     .setProperty("display", "none", "important");
     document.getElementById("container").hidden = false;
 }
+
+document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
