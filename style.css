@@ -32,7 +32,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-.hometext .container{
+.hometext .footer-container{
     width: 100%;
     margin: 0 auto;
     height: 300px;
@@ -99,14 +99,14 @@ header{
     margin-top: 50px;
 }
 
-.flex-container {
+#loader-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.loader {
+#loader {
     border: 0.6vw solid #8a8a8a;
     border-radius: 50%;
     border-top: 0.6vw solid #ffffff;
@@ -115,7 +115,6 @@ header{
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
     margin: auto;
-    /* position: fixed; */
   }
   
   /* Safari */
