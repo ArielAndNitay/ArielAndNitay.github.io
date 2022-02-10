@@ -99,6 +99,13 @@ header{
     margin-top: 50px;
 }
 
+.flex-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .loader {
     border: 0.6vw solid #8a8a8a;
     border-radius: 50%;
@@ -107,12 +114,8 @@ header{
     height: 6vw;
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
-    /* margin: auto;
-     */
-    /* margin: 0; */
-    position: fixed;
-    top: 44%;
-    left: 46%;
+    margin: auto;
+    /* position: fixed; */
   }
   
   /* Safari */
